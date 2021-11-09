@@ -7,10 +7,12 @@
     <title>furry-potato</title> 
     </head>
     <body>
-<div id="app">
-    
+<div id="v-model">
+   <p v-bind:class="{ 'one': active }"> В белом плаще с кровавым подбоем, шаркающей кавалерийской походкой, {{ time }} в крытую колоннаду {{ place }} дворца Ирода Великого вышел {{ name }} </p>
+  <input v-model="name" placeholder="name" />
+  <input v-model="time" placeholder="time" />
+  <input v-model="place" placeholder="place" />
 </div>
-
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     </body>
